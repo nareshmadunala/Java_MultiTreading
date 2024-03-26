@@ -8,6 +8,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
+        MyRunnable myRunnable = new MyRunnable();
+        Thread myThread = new Thread(myRunnable);
+        myThread.start();
     }
 }
